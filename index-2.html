@@ -505,7 +505,7 @@
 			<div class="section-spacing bg-charcoal p-4 p-md-5 box-shadow border-radius-top">
 				<div class="row g-2 align-items-center">
 					<div class="col-12 col-md-6 text-center text-md-start">
-						<p>&copy; 2024. All rights reserved.</p>
+						<p>&copy; <span id="year"></span> 2024. All rights reserved.</p>
 					</div>
 					<div class="col-12 col-md-6 text-center text-md-end">
 						<ul class="list-inline-dash">
@@ -515,6 +515,9 @@
 				</div><!-- end row -->
 			</div>
 		</div>
+		<script>
+   			 document.getElementById('year').textContent = new Date().getFullYear();
+		</script>
 		<!-- end Footer -->
 
 		<!-- Cursor Gradient -->
